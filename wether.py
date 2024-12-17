@@ -1,8 +1,9 @@
 import requests
 
 def API(): 
+    Your_Token = input('Enter Tokne whit https://weatherstack.com: ')
     city_name = input('Entar of City Name: ') 
-    url = f"http://api.weatherstack.com/current?access_key=99bc7e18f9c186aa1dc445532461f0c0&query={city_name}"
+    url = f"http://api.weatherstack.com/current?access_key={Your_Token}&query={city_name}"
     return url
 
 def response():
